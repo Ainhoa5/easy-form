@@ -4,7 +4,9 @@ function ErrorMessage({ mensaje, onClose }) {
     return mensaje ? (
         <>
             <div
+                id="alert-border-2"
                 className="flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800 mt-6"
+                role="alert"
             >
                 <svg
                     className="flex-shrink-0 w-4 h-4"

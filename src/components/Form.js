@@ -7,11 +7,11 @@ const Form = () => {
   const { userId, setUserId, password, setPassword, error, handleSubmit, limpiarError } = useForm();
 
   return (
-    <div className="flex justify-center items-center w-screen h-screen">
+    <div className="flex justify-center items-center w-screen h-screen dark:bg-gray-800">
       <div className="flex flex-col items-center">
-        <div className="w-full p-8 my-4 md:px-12 lg:w-7/12 lg:pl-20 lg:pr-40 rounded-2xl shadow-2xl bg-gray-800 lg:mx-auto lg:mr-80">
+        <div className="w-full p-8 my-4 md:px-12 lg:w-7/12 lg:pl-20 lg:pr-40 rounded-2xl shadow-2xl bg-gray-800 lg:mx-auto lg:mr-80 dark:bg-white">
           <div className="flex">
-            <h1 className="font-bold uppercase text-5xl text-white mb-10">Inicia Sesión</h1>
+            <h1 className="font-bold uppercase text-5xl text-white mb-10 dark:text-black">Inicia Sesión</h1>
           </div>
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 gap-5 mt-5">
@@ -24,7 +24,7 @@ const Form = () => {
             </div>
 
             <div className="my-2 w-1/2 lg:w-1/4">
-              <button className="uppercase text-sm font-bold tracking-wide bg-yellow-500 text-gray-100 p-3 rounded-lg w-48 focus:outline-none focus:shadow-outline mt-5 mb-9">
+              <button className="uppercase text-sm font-bold tracking-wide bg-yellow-500  text-gray-100 p-3 rounded-lg w-48 focus:outline-none focus:shadow-outline mt-5 mb-9">
                 Enviar
               </button>
             </div>
