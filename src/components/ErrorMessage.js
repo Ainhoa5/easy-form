@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function ErrorMessage({ mensaje, onClose }) {
     return mensaje ? (
         <>
             <div
                 id="alert-border-2"
-                className="flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800 mt-6"
+                className="flex items-center p-4 mb-4 text-red-400 border-t-4 border-red-800 bg-gray-800 dark:text-red-800 dark:bg-red-50 dark:border-red-800 mt-6"
                 role="alert"
             >
                 <svg
@@ -22,7 +22,7 @@ function ErrorMessage({ mensaje, onClose }) {
                 </div>
                 <button
                     type="button"
-                    className="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700"
+                    className="ms-auto -mx-1.5 -my-1.5 dark:bg-red-50 dark:text-red-500 dark:hover:bg-red-200 bg-gray-800 text-red-400 hover:bg-gray-700 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 inline-flex items-center justify-center h-8 w-8"
                     onClick={onClose}
                     aria-label="Close"
                 >
