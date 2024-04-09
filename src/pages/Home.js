@@ -1,10 +1,10 @@
 import React from 'react';
-import Formulario from '../components/Formulario';
+import Form from '../components/Form';
 import '../index.css';
 const Home = () => {
   return (
     <div>
-      <Formulario />
+      <Form />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import Input from './Input';
-import Label from './Label';
+import Paragraph from './Paragraph';
 
 export{
     Input,
-    Label
+    Paragraph
 }
