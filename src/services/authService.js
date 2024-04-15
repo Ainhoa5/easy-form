@@ -9,8 +9,8 @@ const verifyToken = async (token) => {
         });
         return response.data.isValid;
     } catch (error) {
-        console.error('Error al verificar el token', error);
-        return false; 
+        console.error('Error al verificar el token', error.response ? error.response.data : error);
+        return false;
     }
 };
 
